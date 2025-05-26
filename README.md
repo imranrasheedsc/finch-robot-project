@@ -1,4 +1,4 @@
-# Finch Robot: "Robot Talent Show"
+# Final Project: Finch Robot Challenges
 
 ## Essential Question
 How can we apply object-oriented programming principles and Java concepts to create interactive, autonomous robot behaviors that solve real-world challenges?
@@ -20,40 +20,39 @@ Your program must demonstrate your understanding of Java programming concepts fr
 
 ## Timeline/Checklist
 
-### Day 1: Planning & Research
-- [ ] Choose your challenge (dance, drawing, or maze navigation)
-- [ ] Explore the Finch API documentation
-- [ ] Review sample programs from BirdBrain Technologies
-- [ ] Create a project plan with pseudocode
-- [ ] Set up GitHub repository for your project
+### Planning & Research
+- Choose your challenge: dance, drawing, or maze navigation
+- Explore the Finch API documentation
+- Review sample programs from BirdBrain Technologies
+- Create a project plan with pseudocode/flow charts/
+- Clone and set up GitHub repository for your project
 
-### Day 2: Development
-- [ ] Write initial code implementation
-- [ ] Test basic functionality with the Finch robot
-- [ ] Debug and refine your approach
-- [ ] Document your progress and challenges
+### Development
+- Write initial code implementation
+- Test basic functionality with the Finch robot
+- Debug and refine your approach
+- Document your progress and challenges
 
-### Day 3: Implementation & Testing
-- [ ] Complete core functionality implementation
-- [ ] Conduct thorough testing with the robot
-- [ ] Optimize code for readability and efficiency
-- [ ] Start preparing documentation
+### Implementation & Testing
+- Complete core functionality implementation
+- Conduct thorough testing with the robot
+- Optimize code for readability and efficiency
+- Start preparing documentation
 
-### Day 4: Finalization & Presentation
-- [ ] Finalize code and ensure complete functionality
-- [ ] Complete README documentation
-- [ ] Prepare for demonstration/presentation
-- [ ] Submit final project to GitHub
+### Finalization
+- Finalize code and ensure complete functionality
+- Complete README documentation
+- Prepare for demonstration
+- Submit final project to GitHub
 
-### Day 5: Presentation & Talent Show
-- [ ] Demonstrate your project
+### Deployment
+- Demonstrate your project
 
 ## Required Components
 
 ### Technical Requirements
 Your program must include at least 5 of these Java/OOP concepts:
-- Custom classes and objects
-- Inheritance
+- Inheritance/Subclasses
 - Method overloading or overriding
 - Arrays or ArrayLists
 - Loops (for, while, etc.)
@@ -68,8 +67,6 @@ Your program must include at least 5 of these Java/OOP concepts:
 - GitHub repository with organized file structure
 - README.md file including:
   * Project description and objectives
-  * Installation/setup instructions
-  * Usage instructions
   * Description of design choices
   * Challenges faced and solutions
   * Future enhancements
@@ -82,7 +79,7 @@ Your program must include at least 5 of these Java/OOP concepts:
 | **Program Functionality** | Program fully accomplishes the chosen challenge with additional creative features. Robot behavior is refined, reliable, and impressive. | Program successfully completes the chosen challenge with minor limitations. Robot behavior is consistent and functional. | Program partially completes the challenge with some inconsistencies. Robot behavior has notable limitations. | Program fails to achieve the core objectives of the challenge. |
 | **Code Quality & OOP Implementation** | Code demonstrates excellent OOP design with 6+ APCSA concepts implemented effectively. Code is elegant, efficient, and well-structured. | Code uses good OOP practices with 5 APCSA concepts implemented correctly. Code is readable and organized. | Code implements basic OOP structure with minimum required APCSA concepts. Some organizational issues present. | Code lacks proper OOP implementation or has significant structural problems. |
 | **Documentation & GitHub Repository** | Exceptional documentation with comprehensive README, well-commented code, and excellent repository organization. | Complete documentation with clear README, adequately commented code, and organized repository. | Basic documentation with minimal README, some comments, and basic repository structure. | Insufficient documentation or poorly organized repository. |
-| **Presentation/Demonstration** | Engaging presentation that clearly explains code design, demonstrates functionality effectively, and addresses technical questions with confidence. | Clear presentation that covers the main aspects of code design and demonstrates functionality adequately. | Basic presentation that shows functionality but lacks depth in explaining design choices. | Insufficient or ineffective presentation of the project. |
+| **Development & Version Control** | The repository demostrates execellent use of Git and GitHub by having many commits and updates to one or more branches of the respository | The respository shows great use of Git and GitHub by having more than 2 new commits to the repository | The respository demostrates basic used of Git and GitHub by having at least 1 new commit to a branch of the repository | The repository only have the initial clone of the or no project submited |
 
 ## Challenge-Specific Guidelines
 
