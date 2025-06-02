@@ -22,11 +22,11 @@ public class FinchDemo {
         System.out.println("yes");
 
         while (enabled) {
-            if (math.abs(myFinch.getCompass() - 90) < math.abs(myFinch.getCompass() - 180)) {
-                myFinch.setTurn()
+            if (Math.abs(myFinch.getCompass() - 90) < Math.abs(myFinch.getCompass() - 180)) {
+                System.out.println("Direction facing closer to 90: " + myFinch.getCompass());
+            } else {
+                System.out.println("Direction facing closer to 180: " + myFinch.getCompass());
             }
-
-            System.out.println("Direction facing: " + myFinch.getCompass());
             while (myFinch.getDistance() > 15) {
                 myFinch.setBeak(0,255,0);
                 myFinch.setMove("F",20,100);
