@@ -19,6 +19,7 @@ public class FinchDemo {
     
 
         // myFinch.playNote(60,0.5);
+        System.out.println("yes");
 
         while (enabled) {
             myFinch.setMove("F",10,100);
