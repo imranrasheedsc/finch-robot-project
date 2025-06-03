@@ -2,7 +2,6 @@ package com.imranrasheed;
 
 import com.birdbrain.Finch;
 
-
 public class FinchDemo {
     // public static boolean isBlocked(Finch object) {
     //     if (object.getDistance() < 8) {
@@ -21,6 +20,8 @@ public class FinchDemo {
         // myFinch.playNote(60,0.5);
         System.out.println("yes");
 
+        int distance = 0;
+
         while (enabled) {
             if (Math.abs(myFinch.getCompass() - 90) < Math.abs(myFinch.getCompass() - 180)) {
                 System.out.println("Direction facing closer to 90: " + myFinch.getCompass());
@@ -28,15 +29,18 @@ public class FinchDemo {
                 System.out.println("Direction facing closer to 180: " + myFinch.getCompass());
             }
             while (myFinch.getDistance() > 15) {
+                distance = myFinch.getDistance()
                 myFinch.setBeak(0,255,0);
                 myFinch.setMove("F",20,100);
-                System.out.println("Right line sensor: " + myFinch.getLine("R"));
-                // if (myFinch.getLine("R") > 90) {
-                //     myFinch.setTurn("L",-myFinch.getCompass(),50);
-                //     myFinch.setTurn("L",90,50);
-                //     myFinch.stop();
-                //     enabled = false;
-                // }
+                if (distance == myFinch.getDistance()) {
+                    System.out.println("same position");
+                }
+                System.out.println("Left light sensor: "+ myFinch.getLight("L"));
+                System.out.println("Right light sensor: "+ myFinch.getLight("R"));
+                if (myFinch.getLine("R") > 90) {
+                    myFinch.stop();
+                    enabled = false;
+                }
                 // myFinch.stop();
                 // enabled = false;
                 // System.out.println(myFinch.getCompass());
@@ -52,8 +56,11 @@ public class FinchDemo {
             }
             myFinch.setBeak(255,0,0);
             myFinch.stop();
+            myFinch.resetEncoders();
+            myFinch.setMove("B",5,100);
             myFinch.setTurn("L",90,50);
             if (myFinch.getDistance() < 15) {
+                myFinch.resetEncoders();
                 myFinch.setTurn("L",180,50);
             }
 
