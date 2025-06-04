@@ -30,4 +30,4 @@ Unfortunately, because of the lack of time I was unable to do full automation. I
 Future enhanchments I would add are ArrayLists that track the movements of the bird. This will help with a system like AI and machine learning, allowing me to train the robot to complete the maze. This would be true automation which I wanted to achieve if I had enough time.
 
 ## Video or images of your robot in action (embedded or linked)
-
+https://www.youtube.com/watch?v=1KSI3iVRFSo
