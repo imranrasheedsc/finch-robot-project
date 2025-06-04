@@ -1,78 +1,36 @@
 package com.imranrasheed;
 
 import com.birdbrain.Finch;
+import java.util.Scanner;
+
+import java.util.ArrayList;
 
 public class FinchDemo {
-    // public static boolean isBlocked(Finch object) {
-    //     if (object.getDistance() < 8) {
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
-
     public static void main(String[] args) {
         Finch myFinch = new Finch();
 
         boolean enabled = true;
-    
 
-        // myFinch.playNote(60,0.5);
-        System.out.println("yes");
+        Scanner input = new Scanner(System.in);
 
-        int distance = 0;
 
-        while (enabled) {
-            if (Math.abs(myFinch.getCompass() - 90) < Math.abs(myFinch.getCompass() - 180)) {
-                System.out.println("Direction facing closer to 90: " + myFinch.getCompass());
-            } else {
-                System.out.println("Direction facing closer to 180: " + myFinch.getCompass());
+        System.out.println("Enter W,A,S,D to control the Finch");
+        String option = "";
+
+        while (!option.equals("EXIT")) {
+            option = input.next().toUpperCase();
+            if (option.equals("W")) {
+                myFinch.setMove("F",10,100);
+            } else if (option.equals("A")) {
+                myFinch.setTurn("L",90,100);
+            } else if (option.equals("S")) {
+                myFinch.setMove("B",10,100);
+            } else if (option.equals("D")) {
+                myFinch.setTurn("R",90,100);
             }
-            while (myFinch.getDistance() > 15) {
-                distance = myFinch.getDistance()
-                myFinch.setBeak(0,255,0);
-                myFinch.setMove("F",20,100);
-                if (distance == myFinch.getDistance()) {
-                    System.out.println("same position");
-                }
-                System.out.println("Left light sensor: "+ myFinch.getLight("L"));
-                System.out.println("Right light sensor: "+ myFinch.getLight("R"));
-                if (myFinch.getLine("R") > 90) {
-                    myFinch.stop();
-                    enabled = false;
-                }
-                // myFinch.stop();
-                // enabled = false;
-                // System.out.println(myFinch.getCompass());
-                // while (FinchDemo.isBlocked(myFinch)) {
-                //     if (myFinch.getCompass() > 90) {
-                //         myFinch.setTurn("L",90,100);
-                //     } else {
-                //         myFinch.setTurn("R",180,100);
-                //     }
-                // }
-                // myFinch.pause(0.01);
-                // enabled = true;
-            }
-            myFinch.setBeak(255,0,0);
-            myFinch.stop();
-            myFinch.resetEncoders();
-            myFinch.setMove("B",5,100);
-            myFinch.setTurn("L",90,50);
-            if (myFinch.getDistance() < 15) {
-                myFinch.resetEncoders();
-                myFinch.setTurn("L",180,50);
-            }
-
-            // if (myFinch.getDistance() < 7) {
-            //     myFinch.stop();
-            //     enabled = false;
-            //     myFinch.setTurn("R",90,100);
-            //     myFinch.pause(0.05);
-            //     System.out.println(myFinch.getDistance());
-            //     enabled = true;
-            // }
         }
+
+        input.close();
 
         myFinch.stopAll();
         myFinch.disconnect();
